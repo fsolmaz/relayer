@@ -3,7 +3,7 @@ sudo tee $HOME/.relayer/chains/stride.json > /dev/null <<EOF
   "type": "cosmos",
   "value": {
     "key": "wallet",
-    "chain-id": "STRIDE-TESTNET-2",
+    "chain-id": "STRIDE-TESTNET-4",
     "rpc-addr": "http://${STRIDE_RPC_ADDR}",
     "account-prefix": "stride",
     "keyring-backend": "test",
