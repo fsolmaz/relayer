@@ -1,0 +1,14 @@
+[Unit]
+Description=Interchain Query Service
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$(which icq) run --debug
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
